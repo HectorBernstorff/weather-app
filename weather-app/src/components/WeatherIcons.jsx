@@ -1,23 +1,23 @@
 import React from 'react';
 
-import icon01d from '../assets/pictures/01d.png';
-import icon01n from '../assets/pictures/01n.png';
-import icon02d from '../assets/pictures/02d.png';
-import icon02n from '../assets/pictures/02n.png';
-import icon03d from '../assets/pictures/03d.png';
-import icon03n from '../assets/pictures/03n.png';
-import icon04d from '../assets/pictures/04d.png';
-import icon04n from '../assets/pictures/04n.png';
-import icon09d from '../assets/pictures/09d.png';
-import icon09n from '../assets/pictures/09n.png';
-import icon10d from '../assets/pictures/10d.png';
-import icon10n from '../assets/pictures/10n.png';
-import icon11d from '../assets/pictures/11d.png';
-import icon11n from '../assets/pictures/11n.png';
-import icon13d from '../assets/pictures/13d.png';
-import icon13n from '../assets/pictures/13n.png';
-import icon50d from '../assets/pictures/50d.png';
-import icon50n from '../assets/pictures/50n.png';
+import icon01d from '../assets/pictures/icons/01d.png';
+import icon01n from '../assets/pictures/icons/01n.png';
+import icon02d from '../assets/pictures/icons/02d.png';
+import icon02n from '../assets/pictures/icons/02n.png';
+import icon03d from '../assets/pictures/icons/03d.png';
+import icon03n from '../assets/pictures/icons/03n.png';
+import icon04d from '../assets/pictures/icons/04d.png';
+import icon04n from '../assets/pictures/icons/04n.png';
+import icon09d from '../assets/pictures/icons/09d.png';
+import icon09n from '../assets/pictures/icons/09n.png';
+import icon10d from '../assets/pictures/icons/10d.png';
+import icon10n from '../assets/pictures/icons/10n.png';
+import icon11d from '../assets/pictures/icons/11d.png';
+import icon11n from '../assets/pictures/icons/11n.png';
+import icon13d from '../assets/pictures/icons/13d.png';
+import icon13n from '../assets/pictures/icons/13n.png';
+import icon50d from '../assets/pictures/icons/50d.png';
+import icon50n from '../assets/pictures/icons/50n.png';
 
 
 function WeatherIcons({ iconCode }) {
