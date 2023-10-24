@@ -8,7 +8,7 @@ import WeatherBackground from './components/WeatherBackground';
 
 const api = {
   key: "97255ca1037987ecf2e172ef246f32d9",
-  base: "https:api.openweathermap.org/data/2.5/",
+  baseApi: "https:api.openweathermap.org/data/2.5/",
 };
 
 function App() {
@@ -20,12 +20,12 @@ function App() {
 
 
   useEffect(() => {
-    // Function to fetch weather data based on user's location
+    // Function to fetch weather data baseApid on user's location
     const fetchWeatherByLocation = async (latitude, longitude) => {
       try {
         // Fetch current weather and forecast from OpenWeatherMap API
-        const weatherResponse = await fetch(`${api.base}weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${api.key}`);
-        const forecastResponse = await fetch(`${api.base}forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${api.key}`);
+        const weatherResponse = await fetch(`${api.baseApi}weather?lat=${latitude}&lon=${longitude}&units=metric&appid=${api.key}`);
+        const forecastResponse = await fetch(`${api.baseApi}forecast?lat=${latitude}&lon=${longitude}&units=metric&appid=${api.key}`);
   
         if (!weatherResponse.ok || !forecastResponse.ok) {
           throw new Error("Failed to fetch weather data.");
@@ -72,7 +72,7 @@ function App() {
   const handleSearch = () => {
     if (search) {
       // Fetch current weather data
-      fetch(`${api.base}weather?q=${search}&units=metric&APPID=${api.key}`)
+      fetch(`${api.baseApi}weather?q=${search}&units=metric&APPID=${api.key}`)
         .then(res => {
           if (!res.ok) {
             throw new Error("Failed to fetch weather data");
@@ -89,7 +89,7 @@ function App() {
         });
   
       // Fetch forecast data
-      fetch(`${api.base}forecast?q=${search}&units=metric&appid=${api.key}`)
+      fetch(`${api.baseApi}forecast?q=${search}&units=metric&appid=${api.key}`)
         .then((res) => {
           if (!res.ok) {
             throw new Error("Failed to fetch forecast data");
