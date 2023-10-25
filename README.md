@@ -1,6 +1,6 @@
 # Weather Application
 
-Weather Application is a modern weather app built using Vite, TypeScript, React.js, Tailwind CSS, and the OpenWeatherMap API. It provides real-time weather updates for your current location and any location you choose.
+Weather Application is a modern weather app built using Vite, React.js, javaScript and the OpenWeatherMap API. It provides real-time weather updates for your current location and any location you choose.
 
 ## Live Demo
 
@@ -34,6 +34,7 @@ To set up the Weather Application on your local machine for development and test
 
 - Vite: A modern web development build tool.
 - React.js: A JavaScript library for building user interfaces.
+- JavaScript: The primary programming language used for the project's functionality.
 - OpenWeatherMap API: An API for weather data.
 
 ## Development
