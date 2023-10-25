@@ -10,10 +10,6 @@ Explore a live version of the app [here](https://your-demo-url-here.com).
 
 To set up the Weather Application on your local machine for development and testing, follow these steps.
 
-### Prerequisites
-
-- Node.js
-
 ### Installation
 
 1. Clone the repository:
@@ -37,9 +33,7 @@ To set up the Weather Application on your local machine for development and test
 ## Tech Stack
 
 - Vite: A modern web development build tool.
-- TypeScript: A statically-typed superset of JavaScript.
 - React.js: A JavaScript library for building user interfaces.
-- Tailwind CSS: A utility-first CSS framework.
 - OpenWeatherMap API: An API for weather data.
 
 ## Development
