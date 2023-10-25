@@ -8,8 +8,9 @@ body {
   justify-content: center;
   align-items: center;
 
-  height: 100vh;
+  height: 100dvh;
   transition: background-image 0.5s ease;
+  min-width: 360px;
 }
 
 .container {
@@ -23,6 +24,8 @@ border-radius: 16px;
 box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
 backdrop-filter: blur(3.2px);
 -webkit-backdrop-filter: blur(3.2px);
+
+min-width: 360px;
 }
 
 .innerContainer {
@@ -35,6 +38,7 @@ backdrop-filter: blur(3.2px);
   height: 80dvh;
   min-height: 30rem;
   max-height: 40rem;
+  min-width: 360px;
 }
 
 
@@ -200,7 +204,7 @@ button {
 }
 
 
-@media (max-width: 450px) {
+@media (max-width: 650px) {
 
   .innerContainer {
     height: 100%;
@@ -217,5 +221,12 @@ button {
     padding: 0;
     border-radius: 0;
 
+  }
+
+  body {
+    min-height: 100dvh;
+    max-height: 100dvh;
+    
+    overflow-y: hidden;
   }
 }
