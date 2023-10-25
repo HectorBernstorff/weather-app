@@ -1,3 +1,8 @@
+body {
+  max-height: 100vh;
+
+}
+
 .wrapper {
   display: flex;
   justify-content: center;
@@ -8,28 +13,33 @@
 }
 
 .container {
+  margin: 1rem;
+  border-radius: 25px;
+  padding: 2rem;
+
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.64);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.2px);
+-webkit-backdrop-filter: blur(3.2px);
+}
+
+.innerContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
-
+  justify-content: space-between;
   position: relative;
-  gap: 4rem;
 
-  border-radius: 25px;
-  /* box-shadow: rgba(13,35,67,0.07) 0px 0px 0px 1px,rgba(13,35,67,0.4) 0px 5px 15px -4px;
- */
-
-  padding: 2rem;
-
-  /* From https://css.glass */
-  background: rgba(255, 255, 255, 0.58);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(18.1px);
-  -webkit-backdrop-filter: blur(18.1px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 80dvh;
+  min-height: 30rem;
+  max-height: 40rem;
 }
+
+
+
+
 
 .div-weather {
   display: flex;
@@ -41,6 +51,7 @@
   font-size: 2rem;
 
   gap: 1rem;
+
 
 }
 
@@ -55,7 +66,7 @@
   /* filter: drop-shadow(0px 1000px 0 red);
   transform: translateY(-1000px); */
 
-  width: 5rem;
+  width: 8rem;
 }
 
 img {
@@ -68,28 +79,34 @@ img {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+
 }
 
 .current-time {
-  font-size: 1rem;
+  font-size: 14px;
+
 }
 
 .temp {
-  font-size: 4rem;
+  font-size: 3rem;
+
+
   padding-left: 20px;
 
-  height: 5rem;
+  height: 4rem;
 }
 
 .temp-max-min {
   font-size: 14px;
+
+  padding-left: 5px;
 }
 
 .wrapper-div-forecast {
   display: flex;
 
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .wrapper-div-forecast img {
@@ -102,8 +119,15 @@ h2 {
   align-items: center;
   flex-direction: column;
 
-  gap: .5rem;
+  gap: .75rem;
 
+  font-size: 14px;
+
+
+}
+
+.div-forecast img {
+  width: 2rem;
 }
 
 .div-weather-info {
@@ -112,7 +136,8 @@ h2 {
 }
 
 .div-weather-info span {
-  font-size: 14px;
+  font-size: 12px;
+
   font-weight: 400;
 }
 
@@ -129,6 +154,9 @@ h2 {
 
 #weather-info-title {
   font-weight: 600;
+
+
+  font-size: 12px;
 }
 
 .input-area {
@@ -172,54 +200,22 @@ button {
 }
 
 
-@media (max-width: 650px) {
-  .wrapper-div-forecast {
-    gap: 0.5rem;
-  }
+@media (max-width: 450px) {
 
-  .div-weather-info {
-    gap: 1.5rem;
-  }
-
-  .div-weather-info span {
-    font-size: 10px;
+  .innerContainer {
+    height: 100%;
+    min-height: 100%;
+    max-height: 100%;
+    display: flex;
+    justify-content: space-around;
   }
 
   .container {
-
-
-    gap: 2rem;
+    height: 100dvh;
+    width: 100dvw;
+    margin: auto;
+    padding: 0;
+    border-radius: 0;
 
   }
-
-  .wrapper-div-forecast img {
-    width: 2rem;
-  }
-
-  .div-forecast {
-    font-size: 12px;
-  }
-
-  #weather-info-title {
-    font-size: 12px;
-  }
-
-  .temp {
-    font-size: 3rem;
-    height: 4rem;
-  }
-
-  h2 {
-    font-size: 1.5rem;
-  }
-
-  .current-time {
-    font-size: 12px;
-  }
-
-  /* .div-search {
-    position: absolute;
-    top: 0rem;
-  } */
-
 }
