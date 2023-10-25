@@ -4,7 +4,7 @@ Weather Application is a modern weather app built using Vite, TypeScript, React.
 
 ## Live Demo
 
-Explore a live version of the app [here](https://your-demo-url-here.com).
+Explore a live version of the app [here]([https://your-demo-url-here.com](https://hectorbernstorff.github.io/weather-app/)).
 
 ## Getting Started
 
