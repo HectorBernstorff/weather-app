@@ -6,6 +6,17 @@ Weather Application is a modern weather app built using Vite, React.js, javaScri
 
 Explore a live version of the app [here](https://hectorbernstorff.github.io/weather-app/).
 
+## Screenshots
+![Clear](screenshots/Clear.png)
+
+![Night](screenshots/Night.png)
+
+![Rain](screenshots/Rain.png)
+
+![Clouds](screenshots/Clouds.png)
+
+![Mobile](screenshots/Mobile.png)
+
 ## Getting Started
 
 To set up the Weather Application on your local machine for development and testing, follow these steps.
