@@ -143,49 +143,6 @@ function App() {
         return `${formattedHours}:${formattedMinutes} ${period}`;
     }
 
-    // const getWeatherBackgroundImage = (icon) => {
-    //   switch (icon) {
-    //     case '01d':
-    //       return background01d;
-    //     case '01n':
-    //       return background01n; // Use the same image for both '01d' and '01n'
-    //     case '02d':
-    //       return background02d;
-    //     case '02n':
-    //       return background02n; // Use the same image for both '02d' and '02n'
-    //     case '03d':
-    //       return background03d;
-    //     case '03n':
-    //       return background03n; // Use the same image for both '03d' and '03n'
-    //     case '04d':
-    //       return background04d;
-    //     case '04n':
-    //       return background04n; // Use the same image for both '04d' and '04n'
-    //     case '09d':
-    //       return background09d;
-    //     case '09n':
-    //       return background09n; // Use the same image for both '09d' and '09n'
-    //     case '10d':
-    //       return background10d;
-    //     case '10n':
-    //       return background10n; // Use the same image for both '10d' and '10n'
-    //     case '11d':
-    //       return background11d;
-    //     case '11n':
-    //       return background11n; // Use the same image for both '11d' and '11n'
-    //     case '13d':
-    //       return background13d;
-    //     case '13n':
-    //       return background13n; // Use the same image for both '13d' and '13n'
-    //     case '50d':
-    //       return background50d;
-    //     case '50n':
-    //       return background50n; // Use the same image for both '50d' and '50n'
-    //     default:
-    //       return `url(defaultImage.jpg)`; // Use a default image or handle the default case
-    //   }
-    // };
-
 
 
     return (
